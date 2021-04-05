@@ -14,3 +14,6 @@ Insérez vos informations de personnage aux lignes 1 à 14
 Remplaces 'dexmod' pour la stat utilisée pour vos attaques (strmod pour strenght, dexmod pour dex) aux lignes 42 et 43
 Remplacez 'intmod' pour la stat utilisée sur vos sorts (chamod pour charisme, intmod pour intel, wismod pour wisdom) aux lignes 44 et 45
 Effacez les + pro et + exp actuellement présent et ajoutez les en fonction de votre proefficency en ces skills aux lignes 48 à 74 (pro pour proefficiency, exp pour expertise)
+
+Ajoutez le portrait de votre personnage dans assets/img et renommez-la 'portrait.jpg'
+Si l'image est sous un autre format que .jpg, il faudra changer le .jpg à la ligne 33 pour l'extension utilisées (.png dans la plupart des autres cas)
