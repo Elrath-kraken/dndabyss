@@ -215,36 +215,43 @@ document.getElementById('rolld4').addEventListener('click',
     function rolld4() {
         d4();
         document.getElementById('resultd4').innerHTML = resultd4;
+        console.log(resultd4);
     });
 document.getElementById('rolld6').addEventListener('click',
     function rolld6() {
         d6();
         document.getElementById('resultd6').innerHTML = resultd6;
+        console.log(resultd6);
     });
 document.getElementById('rolld8').addEventListener('click',
     function rolld8() {
         d8();
         document.getElementById('resultd8').innerHTML = resultd8;
+        console.log(resultd8);
     });
 document.getElementById('rolld10').addEventListener('click',
     function rolld10() {
         d10();
         document.getElementById('resultd10').innerHTML = resultd10;
+        console.log(resultd10);
     });
 document.getElementById('rolld12').addEventListener('click',
     function rolld12() {
         d12();
         document.getElementById('resultd12').innerHTML = resultd12;
+        console.log(resultd12);
     });
 
 document.getElementById('rolld20').addEventListener('click',
     function rolld20() {
         d20();
         document.getElementById('resultd20').innerHTML = resultd20;
+        console.log(resultd20);
     });
 
 document.getElementById('rolld100').addEventListener('click',
     function rolld100() {
         d100();
         document.getElementById('resultd100').innerHTML = resultd100;
+        console.log(resultd100);
     });
