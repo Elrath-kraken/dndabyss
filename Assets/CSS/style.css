@@ -33,3 +33,7 @@
 td {
     padding-right: 40px;
 }
+
+.die {
+    max-width: 40px;
+}

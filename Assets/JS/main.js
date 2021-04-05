@@ -1,8 +1,8 @@
 /* Modifiez ces informations pour celles de votre personnage */
 let cname = 'Meredith';
 let class1 = 'Wizard (Scribe) lvl 18';
-let class2 = 'Sorcerer (Abherrant mind) lvl 1'
-let city = 'Yharnam'
+let class2 = 'Sorcerer (Abherrant mind) lvl 1';
+let city = 'Yharnam';
 let str = 6;
 let dex = 18;
 let con = 18;
@@ -34,9 +34,9 @@ let wismod = (wis - 10) / 2;
 wismod = Math.floor(wismod);
 let chamod = (cha - 10) / 2;
 chamod = Math.floor(chamod);
-let ac = 10 + armor + dexmod
-let wounds = 0
-let exp = pro * 2
+let ac = 10 + armor + dexmod;
+let wounds = 0;
+let exp = pro * 2;
 
 /* Modifiez pour la stat d'attaque et de sort de votre personnage */
 let melee1 = pro + sword1 + dexmod;
@@ -45,33 +45,33 @@ let spell = pro + intmod + wand;
 let spelldc = pro + intmod + wanddc + 8;
 
 /* Ajoutez + pro aux stats dans lesquelles vous êtes proficient et +exp pour votre expertise */
-let acrobatics = dexmod + pro
-let animal = wismod
-let arcana = intmod + exp
-let athletics = strmod + pro
-let deception = chamod
-let history = intmod + exp
-let insight = wismod
-let intimidation = chamod
-let investigation = intmod + exp
-let medicine = wismod
-let nature = intmod + pro
-let perception = wismod
-let performance = chamod
-let persuasion = chamod
-let religion = intmod + pro
-let sleight = dexmod + pro
-let stealth = dexmod + pro
-let survival = wismod
+let acrobatics = dexmod + pro;
+let animal = wismod;
+let arcana = intmod + exp;
+let athletics = strmod + pro;
+let deception = chamod;
+let history = intmod + exp;
+let insight = wismod;
+let intimidation = chamod;
+let investigation = intmod + exp;
+let medicine = wismod;
+let nature = intmod + pro;
+let perception = wismod;
+let performance = chamod;
+let persuasion = chamod;
+let religion = intmod + pro;
+let sleight = dexmod + pro;
+let stealth = dexmod + pro;
+let survival = wismod;
 
 /* Saving Throws */
 
-let ststr = strmod
-let stdex = dexmod
-let stcon = conmod + pro
-let stint = intmod + pro
-let stwis = wismod + pro
-let stcha = chamod
+let ststr = strmod;
+let stdex = dexmod;
+let stcon = conmod + pro;
+let stint = intmod + pro;
+let stwis = wismod + pro;
+let stcha = chamod;
 
 /* Pour Meredith */
 
@@ -164,41 +164,41 @@ function modhp() {
 
 /* Dice Roller */
 
-let resultd4 = 0
-let resultd6 = 0
-let resultd8 = 0
-let resultd10 = 0
-let resultd12 = 0
-let resultd20 = 0
-let resultd100 = 0
+let resultd4 = 0;
+let resultd6 = 0;
+let resultd8 = 0;
+let resultd10 = 0;
+let resultd12 = 0;
+let resultd20 = 0;
+let resultd100 = 0;
 
 let d4 = function d4() {
-    resultd4 = Math.ceil(Math.random() * 4)
+    resultd4 = Math.ceil(Math.random() * 4);
     return resultd4;
 }
 let d6 = function d6() {
-    resultd6 = Math.ceil(Math.random() * 6)
+    resultd6 = Math.ceil(Math.random() * 6);
     return resultd6;
 }
 let d8 = function d8() {
-    resultd8 = Math.ceil(Math.random() * 8)
+    resultd8 = Math.ceil(Math.random() * 8);
     return resultd8;
 }
 let d10 = function d10() {
-    resultd10 = Math.ceil(Math.random() * 10)
+    resultd10 = Math.ceil(Math.random() * 10);
     return resultd10;
 }
 let d12 = function d12() {
-    resultd12 = Math.ceil(Math.random() * 12)
-    return resultd12
+    resultd12 = Math.ceil(Math.random() * 12);
+    return resultd12;
 }
 let d20 = function d20() {
-    resultd20 = Math.ceil(Math.random() * 20)
-    return resultd20
+    resultd20 = Math.ceil(Math.random() * 20);
+    return resultd20;
 }
 let d100 = function d100() {
-    resultd100 = Math.ceil(Math.random() * 100)
-    return resultd100
+    resultd100 = Math.ceil(Math.random() * 100);
+    return resultd100;
 }
 
 /* Dice Roll Meredith */
@@ -210,3 +210,41 @@ function rollhalbarde() {
 
     document.getElementById('results1').innerHTML = resultd10 + ' + ' + strmod + ' + ' + enchantement + ' = ' + (resultd10 + strmod + enchantement);
 }
+
+document.getElementById('rolld4').addEventListener('click',
+    function rolld4() {
+        d4();
+        document.getElementById('resultd4').innerHTML = resultd4;
+    });
+document.getElementById('rolld6').addEventListener('click',
+    function rolld6() {
+        d6();
+        document.getElementById('resultd6').innerHTML = resultd6;
+    });
+document.getElementById('rolld8').addEventListener('click',
+    function rolld8() {
+        d8();
+        document.getElementById('resultd8').innerHTML = resultd8;
+    });
+document.getElementById('rolld10').addEventListener('click',
+    function rolld10() {
+        d10();
+        document.getElementById('resultd10').innerHTML = resultd10;
+    });
+document.getElementById('rolld12').addEventListener('click',
+    function rolld12() {
+        d12();
+        document.getElementById('resultd12').innerHTML = resultd12;
+    });
+
+document.getElementById('rolld20').addEventListener('click',
+    function rolld20() {
+        d20();
+        document.getElementById('resultd20').innerHTML = resultd20;
+    });
+
+document.getElementById('rolld100').addEventListener('click',
+    function rolld100() {
+        d100();
+        document.getElementById('resultd100').innerHTML = resultd100;
+    });
