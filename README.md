@@ -1,5 +1,8 @@
 Cette feuille de personnage est 100% modifiable pour votre personnage.
 
+Je recommande d'installer Visual Studio Code pour éditer le code
+https://code.visualstudio.com/
+
 Instructions :
 
 Dans le fichier index.html -
