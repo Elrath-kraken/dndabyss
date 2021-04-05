@@ -5,7 +5,8 @@ https://code.visualstudio.com/
 
 Instructions :
 
-Dans le fichier index.html -
+Dans le fichier index.html
+
 Entrez vos weakness à la ligne 319 
 
 Entrez vos resistances à la ligne 323 
