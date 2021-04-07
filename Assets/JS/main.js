@@ -204,14 +204,6 @@ let d100 = function d100() {
 
 /* Dice Roll Meredith */
 
-function rollhalbarde() {
-    do {
-        d10();
-    } while (resultd10 == 1);
-
-    document.getElementById('results1').innerHTML = resultd10 + ' + ' + strmod + ' + ' + enchantement + ' = ' + (resultd10 + strmod + enchantement);
-}
-
 document.getElementById('rolld4').addEventListener('click',
     function rolld4() {
         d4();
@@ -257,60 +249,59 @@ document.getElementById('rolld100').addEventListener('click',
         console.log('Result of D100 :' + resultd100);
     });
 
-// function rollmainattackfred() {
-//     d8();
+function rollmainattackfred() {
+    d8();
 
-//     document.getElementById('resultsrollmainattackfred').innerHTML = resultd8 + ' + ' + dexmod + ' + ' + sword1 + ' = ' + (resultd8 + dexmod + sword1)
-// };
+    document.getElementById('resultsrollmainattackfred').innerHTML = resultd8 + ' + ' + dexmod + ' + ' + sword1 + ' = ' + (resultd8 + dexmod + sword1)
+};
 
-// function rolloffattackfred() {
-//     d6();
+function rolloffattackfred() {
+    d6();
 
-//     document.getElementById('resultsrolloffattackfred').innerHTML = resultd6 + ' + ' + dexmod + ' + ' + sword2 + ' = ' + (resultd6 + dexmod + sword2)
-// };
+    document.getElementById('resultsrolloffattackfred').innerHTML = resultd6 + ' + ' + dexmod + ' + ' + sword2 + ' = ' + (resultd6 + dexmod + sword2)
+};
 
-// function rollmainattackfredsneak() {
-//     d8()
-//     d6()
-//     let result2d6 = Math.ceil(Math.random() * 6)
-//     let result3d6 = Math.ceil(Math.random() * 6)
-//     let result4d6 = Math.ceil(Math.random() * 6)
-//     let result5d6 = Math.ceil(Math.random() * 6)
-//     let result6d6 = Math.ceil(Math.random() * 6)
-//     let result7d6 = Math.ceil(Math.random() * 6)
-//     let result8d6 = Math.ceil(Math.random() * 6)
-//     let result9d6 = Math.ceil(Math.random() * 6)
-//     if (resultd6 == 1) {
-//         resultd6 = 2;
-//     } if (result2d6 == 1) {
-//         result2d6 = 2;
-//     } if (result3d6 == 1) {
-//         result3d6 = 2;
-//     } if (result4d6 == 1) {
-//         result4d6 = 2;
-//     } if (result5d6 == 1) {
-//         result5d6 = 2;
-//     } if (result6d6 == 1) {
-//         result6d6 = 2;
-//     } if (result7d6 == 1) {
-//         result7d6 = 2;
-//     } if (result8d6 == 1) {
-//         result8d6 = 2;
-//     } if (result9d6 == 1) {
-//         result9d6 = 2;
-//     }
-//     document.getElementById('resultsrollmainattackfredsneak').innerHTML = resultd8 + ' + ' + resultd6 + ' + ' + result2d6 + ' + ' + result3d6 + ' + ' + result4d6 + ' + ' + result5d6 + ' + ' + result6d6 + ' + ' + result7d6 + ' + ' + result8d6 + ' + ' + result9d6 + ' + ' + dexmod + ' + ' + sword1 + ' = ' + (resultd8 + resultd6 + result2d6 + result3d6 + result4d6 + result5d6 + result6d6 + result7d6 + result8d6 + result9d6 + dexmod + sword1);
-// }
+function rollmainattackfredsneak() {
+    d8()
+    d6()
+    let result2d6 = Math.ceil(Math.random() * 6)
+    let result3d6 = Math.ceil(Math.random() * 6)
+    let result4d6 = Math.ceil(Math.random() * 6)
+    let result5d6 = Math.ceil(Math.random() * 6)
+    let result6d6 = Math.ceil(Math.random() * 6)
+    let result7d6 = Math.ceil(Math.random() * 6)
+    let result8d6 = Math.ceil(Math.random() * 6)
+    let result9d6 = Math.ceil(Math.random() * 6)
+    if (resultd6 == 1) {
+        resultd6 = 2;
+    } if (result2d6 == 1) {
+        result2d6 = 2;
+    } if (result3d6 == 1) {
+        result3d6 = 2;
+    } if (result4d6 == 1) {
+        result4d6 = 2;
+    } if (result5d6 == 1) {
+        result5d6 = 2;
+    } if (result6d6 == 1) {
+        result6d6 = 2;
+    } if (result7d6 == 1) {
+        result7d6 = 2;
+    } if (result8d6 == 1) {
+        result8d6 = 2;
+    } if (result9d6 == 1) {
+        result9d6 = 2;
+    }
+}
 
-// function rollblacklotusfred() {
-//     d6()
-//     let result2d6 = Math.ceil(Math.random() * 6)
-//     let result3d6 = Math.ceil(Math.random() * 6)
-//     let result4d6 = Math.ceil(Math.random() * 6)
-//     let result5d6 = Math.ceil(Math.random() * 6)
-//     let result6d6 = Math.ceil(Math.random() * 6)
-//     let result7d6 = Math.ceil(Math.random() * 6)
-//     let result8d6 = Math.ceil(Math.random() * 6)
-//     let result9d6 = Math.ceil(Math.random() * 6)
-//     document.getElementById('resultsblacklotusfred').innerHTML = resultd6 + ' + ' + result2d6 + ' + ' + result3d6 + ' + ' + result4d6 + ' + ' + result5d6 + ' + ' + result6d6 + ' + ' + result7d6 + ' + ' + result8d6 + ' + ' + result9d6 + ' = ' + (resultd6 + result2d6 + result3d6 + result4d6 + result5d6 + result6d6 + result7d6 + result8d6 + result9d6);
-// }
+function rollblacklotusfred() {
+    d6()
+    let result2d6 = Math.ceil(Math.random() * 6)
+    let result3d6 = Math.ceil(Math.random() * 6)
+    let result4d6 = Math.ceil(Math.random() * 6)
+    let result5d6 = Math.ceil(Math.random() * 6)
+    let result6d6 = Math.ceil(Math.random() * 6)
+    let result7d6 = Math.ceil(Math.random() * 6)
+    let result8d6 = Math.ceil(Math.random() * 6)
+    let result9d6 = Math.ceil(Math.random() * 6)
+    document.getElementById('resultsblacklotusfred').innerHTML = resultd6 + ' + ' + result2d6 + ' + ' + result3d6 + ' + ' + result4d6 + ' + ' + result5d6 + ' + ' + result6d6 + ' + ' + result7d6 + ' + ' + result8d6 + ' + ' + result9d6 + ' = ' + (resultd6 + result2d6 + result3d6 + result4d6 + result5d6 + result6d6 + result7d6 + result8d6 + result9d6);
+}
